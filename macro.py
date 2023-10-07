@@ -213,6 +213,7 @@ class ChatMacroApp:
         else:
             self.uwu_pastes.clear()
             self.uwu_pastes.update(new_pastes)
+            self.recent_pastes.clear()
             self.current_pastes_display.config(text=", ".join(self.uwu_pastes))
 
     def update_trigger(self):
